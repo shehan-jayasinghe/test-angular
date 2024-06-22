@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class MyComponentComponent {
   title :string = 'test may app';
+  protected readonly name:string = 'shehan';
 }
