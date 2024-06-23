@@ -1,4 +1,8 @@
-<div class="bg-body"  >{{ title }}</div>
-<button type="button" class="btn btn-primary">Primary</button>
-<input [value]="name" >
-<button (click)="onClick()">click me {{newNumber}}</button>
+<div class="d-flex flex-column w-50 h-100 justify-content-between">
+  <div class="bg-body my-3"  >{{ title }}</div>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <input [value]="name"/>
+  <button (click)="onClick()">click me {{newNumber}}</button>
+  <input [(ngModel)] ="names"/><p>{{names}}</p>
+</div>
+
