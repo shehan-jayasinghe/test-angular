@@ -9,5 +9,11 @@ import { Component } from '@angular/core';
 })
 export class MyComponentComponent {
   title :string = 'test may app';
-  protected readonly name:string = 'shehan';
+  protected readonly name:string = '0';
+  newNumber: number = 1;
+  onClick(){
+    console.log(this.newNumber)
+    this.newNumber+=1;
+  };
+
 }
