@@ -26,4 +26,8 @@ export class TestChildComponent {
   search() {
     this.childInputMessageEvent.emit(this.childInput)
   }
+
+  childMethod() {
+    console.log('Child method called');
+  }
 }
