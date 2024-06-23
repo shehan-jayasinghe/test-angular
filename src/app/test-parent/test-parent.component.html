@@ -1,2 +1,9 @@
-<app-test-child [childMessage]="parentMessage"/>
-<input [(ngModel)]="parentMessage">
+<app-test-child
+  [childMessage]="parentMessage"
+  (messageEvent)="receiveMessage($event)"
+/>
+<div class="d-flex flex-column">
+  <input [(ngModel)]="parentMessage">
+  <p>{{message}}</p>
+</div>
+

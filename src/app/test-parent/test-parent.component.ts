@@ -15,4 +15,9 @@ import {FormsModule} from "@angular/forms";
 export class TestParentComponent {
   @Input() childProperty: string | undefined;
   parentMessage: string ="";
+  message: string="";
+
+  receiveMessage(message: string) {
+    this.message = message;
+  }
 }
