@@ -1,2 +1,6 @@
 <p>{{ childMessage }}</p>
 <button (click)="sendMessage()">Send Message</button>
+<input [(ngModel)]="childInput" (input)="search()">
+<ul>
+  <li *ngFor="let childItem of childItems">{{childItem}}</li>
+</ul>

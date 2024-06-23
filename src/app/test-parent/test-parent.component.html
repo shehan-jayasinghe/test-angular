@@ -1,6 +1,8 @@
 <app-test-child
   [childMessage]="parentMessage"
+  [childItems]="filteredItems"
   (messageEvent)="receiveMessage($event)"
+  (childInputMessageEvent)="search($event)"
 />
 <div class="d-flex flex-column">
   <input [(ngModel)]="parentMessage">
