@@ -1,0 +1,4 @@
+.card { border: 1px solid #ccc; padding: 16px; }
+.card-header { font-weight: bold; }
+.card-body { margin: 16px 0; }
+.card-footer { text-align: right; }

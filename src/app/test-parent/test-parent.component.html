@@ -3,7 +3,11 @@
   [childItems]="filteredItems"
   (messageEvent)="receiveMessage($event)"
   (childInputMessageEvent)="search($event)"
-/>
+>
+  <div slot="header">Card Header</div>
+  <div slot="body">This is the body of the card.</div>
+  <div slot="footer">Card Footer</div>
+</app-test-child>
 <div class="d-flex flex-column">
   <input [(ngModel)]="parentMessage">
   <p>{{message}}</p>

@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @Component({
@@ -8,7 +8,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
   imports: [
     NgForOf,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgIf
   ],
   templateUrl: './test-child.component.html',
   styleUrl: './test-child.component.css'
@@ -19,6 +20,7 @@ export class TestChildComponent {
   @Output() messageEvent = new EventEmitter<string>();
   @Output() childInputMessageEvent = new EventEmitter<string>();
   childInput: string="";
+  condition: boolean = true;
   sendMessage() {
     this.messageEvent.emit('Hello from the Child Component!');
   }

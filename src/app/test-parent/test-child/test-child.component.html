@@ -4,3 +4,19 @@
 <ul>
   <li *ngFor="let childItem of childItems">{{childItem}}</li>
 </ul>
+<div class="card">
+  <div class="card-header">
+    <div *ngIf="condition">
+      <ng-content select="[slot=header]"></ng-content>
+    </div>
+    <div *ngIf="!condition">
+      <p>Alternate content when condition is false.</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <ng-content select="[slot=body]"></ng-content>
+  </div>
+  <div class="card-footer">
+    <ng-content select="[slot=footer]"></ng-content>
+  </div>
+</div>
