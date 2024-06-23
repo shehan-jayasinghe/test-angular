@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgStyle} from "@angular/common";
 
 @Component({
   selector: 'app-test-directives',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    NgStyle
   ],
   templateUrl: './test-directives.component.html',
   styleUrl: './test-directives.component.css'
 })
 export class TestDirectivesComponent {
- items: string[] = ['Item 1', 'Item 2', 'Item 3']
+ items: string[] = ['Item 1', 'Item 2', 'Item 3'];
+ color: string ="red";
 }
