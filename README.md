@@ -1,27 +1,34 @@
 # TestAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+Angular application used for learning and experimenting with Angular application structure, components, services, testing, and CLI workflows.
 
-## Development server
+## Technology
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular
+- TypeScript
+- Angular CLI
 
-## Code scaffolding
+## Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install dependencies and start the development server:
 
-## Build
+```bash
+npm install
+ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Open `http://localhost:4200/`.
 
-## Running unit tests
+## Common Commands
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+ng generate component component-name
+ng build
+ng test
+```
 
-## Running end-to-end tests
+For end-to-end testing, install and configure the E2E framework required by the current project.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Project Purpose
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This repository is primarily a learning and experimentation project for Angular fundamentals and CLI-based development.
